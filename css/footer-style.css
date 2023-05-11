@@ -1,0 +1,150 @@
+footer {
+    background: rgba(33, 33, 33, 0.47);
+    backdrop-filter: blur(16.5px);
+    height: 271px;
+    width: 100%;
+}
+footer .nav {
+    width: 100%;
+}
+footer .nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+}
+footer .contacts .container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.footer .contacts .search {
+    display: flex;
+    gap: 59px;
+    
+}
+footer .search-input {
+    width: 388px;
+    height: 20px;
+    border: 1px solid white;
+    background: unset;
+    padding: 10px 40px 10px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    background-image: url(../img/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 14px);
+}
+.search-input::placeholder {
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #dadada;
+}
+footer .footer-logo {
+    width: 196px;
+    height: 30px;
+    object-fit: fill;
+}
+footer .nav .nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 62px;
+    list-style-type: none;
+}
+footer .online {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+footer .online a:hover svg path {
+    fill: #D38B13;
+}
+footer .online a:focus svg path {
+    fill: #777E89;
+}
+footer .call {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+footer .call button {
+    width: 175px;
+    height: 46px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2D2D2D;
+    background-color: white;
+    border: unset;
+}
+footer .call button:hover {
+    color: #D38B13;
+}
+footer .call button:focus {
+    color: #777E89;
+}
+.call .phone-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.call .phone-number p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+}
+.call .phone-number p a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+}
+.call .phone-number p a:hover {
+    color: #D38B13;
+}
+.call .phone-number p a:focus {
+    color: #777E89;
+}
+
+.call .phone-number
+footer .copyright {
+    width: 100%;
+    margin-top: 27px;
+}
+footer .copyright .container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #777E89;
+}
+.copyright p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #777E89;
+    display: block;
+}
+footer .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+}
+footer .nav-links a:hover {
+    color: #D38B13;
+}
+footer .nav-links a:focus {
+    color: #777E89;
+}

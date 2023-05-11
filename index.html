@@ -9,29 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main-style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main-banner.css">
-    <link rel="stylesheet" href="css/fresh-pasta.css">
-    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/header-style.css">
+    <link rel="stylesheet" href="css/banner-style.css">
+    <link rel="stylesheet" href="css/quality-style.css">
+    <link rel="stylesheet" href="css/team-style.css">
     <link rel="stylesheet" href="css/gallery-style.css">
-    <link rel="stylesheet" href="css/our-products.css">
-    <link rel="stylesheet" href="css/about-us.css">
-    <link rel="stylesheet" href="css/delivery.css">
+    <link rel="stylesheet" href="css/products-style.css">
+    <link rel="stylesheet" href="css/about-style.css">
+    <link rel="stylesheet" href="css/delivery-style.css">
     <link rel="stylesheet" href="css/feedback-style.css">
     <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <section>
             <div class="container">
-                <a class="header-logo" href="#"><img src="img/f5235f536c0e23da240e7d0e64ad2b92.png" alt="Логотип"></a>
-                <div class="nav">
-                    <a href="#">О компании</a>
-                    <a href="#">Паста короткая</a>
-                    <a href="#">Паста длинная</a>
-                    <a href="#">Доставка</a>
-                    <a href="#">Контакты</a>
-                </div>
+                <a class="header-logo" href="/"><img src="img/f5235f536c0e23da240e7d0e64ad2b92.png" alt="Логотип"></a>
+                <ul class="nav">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Паста короткая</a></li>
+                    <li><a href="#">Паста длинная</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
                 <div class="phone">
                     <div class="select-phone">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,13 +65,13 @@
                 </div>
             </div>
         </section>
-        <section class="wrapper fresh-pasta">
+        <section class="wrapper quality">
             <div class="gradient">
             <div class="container">
-                <div class="fresh-pasta-img">
+                <div class="quality-img">
                     <img src="img/caddc35c91d6df54cbabb0f9f494c7ec.png" alt="">
                 </div>
-                <div class="fresh-pasta-text">
+                <div class="quality-text">
                     
                     <h2>
                         Свежая паста ручной работы
@@ -89,7 +90,7 @@
                 <h2>Наша команда</h2>
                 <div class="team-members">
                     <div class="team-photo-miniatures">
-                        <div class="team-member-active"><img src="img/1fdbb7d0615dd2e794ffbb47890c23b7.png"></div>
+                        <div class="team-member-active"><img alt="Евгений Мальцев" src="img/1fdbb7d0615dd2e794ffbb47890c23b7.png"></div>
                         <div><img src="img/8e5e9f18f0e5f28c33ed1db1486fb0ae.png" alt=""></div>
                         <div><img src="img/4846a4e6cae8b315521eccd28e13de35.png" alt="" srcset=""></div>
                     </div>
@@ -98,17 +99,17 @@
                     </div>
                     <div class="team-member-info">
                         <h3>Евгений Мальцев</h3>
-                        <h4>Бренд-шеф</h4>
-                        <p>Безумно любит своё дело. Каждый день он замешивает свежее тесто и заготавливает лучшие начинки для создания той самой итальянской классики.                        </p>
-                        <p>Каждый понедельник Евгений представляет экспериментальную пасту недели, вкус которой не станет серийным. Следите за новостями, успейте попробовать.</p>
+                        <p class="team-member-position">Бренд-шеф</p>
+                        <p class="team-member-text">Безумно любит своё дело. Каждый день он замешивает свежее тесто и заготавливает лучшие начинки для создания той самой итальянской классики.                        </p>
+                        <p class="team-member-text">Каждый понедельник Евгений представляет экспериментальную пасту недели, вкус которой не станет серийным. Следите за новостями, успейте попробовать.</p>
                         <div class="team-buttons">
-                            <button class="previous-member">
+                            <button class="previous-member" aria-label="Назад">
                                 <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.07146 0.785645L1.85718 3.99993L5.07146 7.21422" stroke="black" stroke-width="1.60714"/>
                                 </svg>
                                 
                             </button>
-                            <button class="next-member">
+                            <button class="next-member" aria-label="Вперед">
                                 <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.785714 7.21436L4 4.00007L0.785714 0.785784" stroke="black" stroke-width="1.60714"/>
                                 </svg>
@@ -207,29 +208,25 @@
                     </div>
                     <a href="#">Подробнее &rarr;</a>
                 </div>
-            </div>
-            
+            </div> 
         </section>
         <section class="wrapper delivery">
             <div class="gradient">
-            <div class="delivery-about">
-                
-                <div class="container">
-                    <div class="delivery-photo">
-                        <img src="img/5bf1a54cf1a8acbd5fe729c6b7e8d21d.png">
-                    </div>
-                    <div class="delivery-info">
-                        <h2>Доставка</h2>
-                        <ol>
-                            <li><p><b>1500 &#8381;</b> минимальная сумма заказа</p></li>
-                            <hr>
-                            <li><p>Заказы, оформленные <b>до 18:00</b>, доставляем на следующий день.</p></li>
-                            <hr>
-                            <li><p>Заказы, оформленные <b>после 18:00</b> доставляем через день.</p></li>
-                        </ol>
+                <div class="delivery-about">
+                    <div class="container">
+                        <div class="delivery-photo">
+                            <img alt="Доставка пасты" src="img/5bf1a54cf1a8acbd5fe729c6b7e8d21d.png">
+                        </div>
+                        <div class="delivery-info">
+                            <h2>Доставка</h2>
+                            <ol>
+                                <li><p><b>1500 &#8381;</b> минимальная сумма заказа</p></li>
+                                <li><p>Заказы, оформленные <b>до 18:00</b>, доставляем на следующий день.</p></li>
+                                <li><p>Заказы, оформленные <b>после 18:00</b> доставляем через день.</p></li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div class="delivery-area">
                 <div class="map">
@@ -239,17 +236,18 @@
                     </div>
                 </div>
                 <div class="delivery-content">
-                <div class="container">
-                    <div>
-                        <h2>Зона доставки</h2>
-                        <p>В выделенной зоне происходит доставка</p>
-                        <p>Так же вы можете самостоятельно забрать заказ <b>с 13:00 до 22:00</b> в наших барах:</p>
-                        <ul>
-                            <li>STEREO pub & pizza на Пискарёвском проспекте, д. 1</li>
-                            <li>ROCKETS & BISHOPS craft beer & burgers на ул. Гороховая, д.26.</li>
-                        </ul>
+                    <div class="container">
+                        <div>
+                            <h2>Зона доставки</h2>
+                            <p>В выделенной зоне происходит доставка</p>
+                            <p>Так же вы можете самостоятельно забрать заказ <b>с 13:00 до 22:00</b> в наших барах:</p>
+                            <ul>
+                                <li>STEREO pub & pizza на Пискарёвском проспекте, д. 1</li>
+                                <li>ROCKETS & BISHOPS craft beer & burgers на ул. Гороховая, д.26.</li>
+                            </ul>
+                        </div>
                     </div>
-                </div></div>
+                </div>
             </div>
         </section>
         <section class="wrapper feedback">
@@ -259,30 +257,28 @@
                     <h1>Остались вопросы?</h1>
                     <p>Заполните небольшую форму и наш менеджер свяжется с вами в ближайшее время</p>
                     <form action="#" method="post">
-                        
-                        <input class="field name" type="text" placeholder="Имя" name="name">
+                        <input class="field name" type="text" placeholder="Имя" name="name" required>
                         <label for="phone">Телефон</label>
-                        <input class="field phone" type="text" placeholder="8 909 |" name="phone">
-                        <input class="field email" type="email" placeholder="E-mail" name="email">
+                        <input class="field phone" type="tel" placeholder="8 909 |" name="phone" required>
+                        <input class="field email" type="email" placeholder="E-mail" name="email" required>
                         <input class="submit" type="submit">
                     </form>
                 </div>
                 </div>      
             </div>
-            
         </section>
     </main>
     <footer class="footer">
         <section class="nav">
             <div class="container">
                 <img class="footer-logo" src="img/f5235f536c0e23da240e7d0e64ad2b92.png" alt="Логотип">
-                <div class="nav-links">
-                    <a href="#">О компании</a>
-                    <a href="#">Паста короткая</a>
-                    <a href="#">Паста длинная</a>
-                    <a href="#">Доставка</a>
-                    <a href="#">Контакты</a>
-                </div>
+                <ul class="nav-links">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Паста короткая</a></li>
+                    <li><a href="#">Паста длинная</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
             </div>
         </section>
         <section class="contacts">
@@ -318,15 +314,17 @@
                     <div class="phone-number">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_47_148)">
-                            <path d="M12.7822 6.92469C11.5022 9.44024 9.44 11.4936 6.92444 12.7825L4.96889 10.8269C4.72889 10.5869 4.37333 10.5069 4.06222 10.6136C3.06667 10.9425 1.99111 11.1202 0.888888 11.1202C0.4 11.1202 0 11.5202 0 12.0091V15.1114C0 15.6002 0.4 16.0002 0.888888 16.0002C9.23556 16.0002 16 9.2358 16 0.889133C16 0.400244 15.6 0.000244141 15.1111 0.000244141H12C11.5111 0.000244141 11.1111 0.400244 11.1111 0.889133C11.1111 2.00024 10.9333 3.06691 10.6044 4.06247C10.5067 4.37358 10.5778 4.72024 10.8267 4.96913L12.7822 6.92469Z" fill="white"/>
+                                <path d="M12.7822 6.92469C11.5022 9.44024 9.44 11.4936 6.92444 12.7825L4.96889 10.8269C4.72889 10.5869 4.37333 10.5069 4.06222 10.6136C3.06667 10.9425 1.99111 11.1202 0.888888 11.1202C0.4 11.1202 0 11.5202 0 12.0091V15.1114C0 15.6002 0.4 16.0002 0.888888 16.0002C9.23556 16.0002 16 9.2358 16 0.889133C16 0.400244 15.6 0.000244141 15.1111 0.000244141H12C11.5111 0.000244141 11.1111 0.400244 11.1111 0.889133C11.1111 2.00024 10.9333 3.06691 10.6044 4.06247C10.5067 4.37358 10.5778 4.72024 10.8267 4.96913L12.7822 6.92469Z" fill="white"/>
                             </g>
                             <defs>
-                            <clipPath id="clip0_47_148">
-                            <rect width="16" height="16" fill="white" transform="matrix(-1 0 0 1 16 0.000244141)"/>
-                            </clipPath>
+                                <clipPath id="clip0_47_148">
+                                <rect width="16" height="16" fill="white" transform="matrix(-1 0 0 1 16 0.000244141)"/>
+                                </clipPath>
                             </defs>
-                            </svg>
-                            <p>+7 351 233-06-01</p>
+                        </svg>
+                        <p>
+                            <a href="tel:+73512330601">+7 351 233-06-01</a>
+                        </p>
                     </div>
                     <button>Обратный звонок</button>
                 </div>
@@ -335,7 +333,7 @@
         <section class="copyright">
             <div class="container">
                 <p>&copy; 2020 Universe, Все права защищены</p>
-                <img src="img/logo_intec.png" alt="">
+                <a href="https://intecweb.ru/"><img src="img/logo_intec.png" alt=""></a>
             </div>
         </section>
     </footer>
