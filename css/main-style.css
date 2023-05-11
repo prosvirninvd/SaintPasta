@@ -5,7 +5,7 @@
     text-decoration: none;
     
 }
-a, button, path {
+a, button, path, input {
     transition: color 0.3s, fill 0.3s, stroke 0.3s, border-color 0.3s;
 }
 h2 {
