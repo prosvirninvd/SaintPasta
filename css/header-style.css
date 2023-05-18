@@ -1,22 +1,26 @@
+@media (min-width: 768px) {
+
 header {
     width: 100%;
     min-height: 83px;
     background: #EEDEBF;
     box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.17);
-    z-index: 99;
-    position: relative;
+    z-index: 1;
+    position: fixed;
+    top: 0;
 }
 header .container {
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    padding-top: 23px;
 }
-header a.header-logo {
+header .header-logo {
+    margin-top: 3px;
     width: 199px;
     height: 30px;
     display: block;
 }
-header a.header-logo img {
+header .header-logo img {
     width: 199px;
     height: 30px;
     object-fit: fill;
@@ -25,15 +29,14 @@ header a.header-logo img {
 header a.header-logo:hover img {
     filter: brightness(2);
 }
-header .nav {
-    padding-top: 7px;
+.header-nav {
     display: flex;
     justify-content: space-between;
     gap: 50px;
     list-style-type: none;
 }
-header .nav a {
-    text-decoration: none;
+.header-nav a {
+    margin-top: 10px;
     color: black;
     display: block;
     font-weight: 400;
@@ -41,7 +44,7 @@ header .nav a {
     line-height: 21px;
     font-style: normal;
 }
-header .phone {
+.header-phone {
     width: 191px;
     height: 42px;
 }
@@ -50,7 +53,7 @@ header .select-phone {
     gap: 22px;
     align-items: center;
 }
-.phone button {
+.header-phone button {
     background: unset;
     border: unset;
     border-bottom: 1px dashed #1F1F1F;
@@ -62,6 +65,7 @@ header .select-phone {
     color: #1F1F1F;
     display: flex;
     margin-left: auto;
+    margin-right: 18px;
 }
 .select-phone select {
     font-style: normal;
@@ -87,9 +91,145 @@ header .select-phone {
     width: 155px;
     height: 24px;
 }
-header .nav a:hover {
+.header-nav a:hover {
     color: white;
 }
-header .nav a:focus {
+.header-nav a:focus {
     color: #777E89;
+}}
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        min-height: 66px;
+        background: rgba(238, 222, 191, 0.95);
+        box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.17);
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        
+    }
+    header .wrapper {
+        margin: 23px 0;
+    }
+    .header-logo-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    header .header-logo {
+        width: 127px;
+        height: 20px;
+        display: block;
+    }
+    header .header-logo img {
+        width: 127px;
+        height: 20px;
+        object-fit: fill;
+        display: block;
+        filter: brightness(0);
+    }
+    .menu-button {
+        width: 30px;
+        height: 19px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .menu-button > span, .menu-button > span::before, .menu-button > span::after {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        border-radius: 1px;
+        display: block;
+        position: absolute;
+    }
+    .menu-button > span::before {
+        content: '';
+        top: 8px
+    }
+    .menu-button > span::after {
+        content: '';
+        top: 16px;
+    }
+    .header-nav {
+        list-style: none;
+    }
+    .header-nav li {
+        margin: 18px 0;
+    }
+    .header-nav a {
+        color: black;
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        font-style: normal;
+        text-align: center;
+    }
+    .header-phone {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 191px;
+        margin: 0 auto;
+    }
+    header .select-phone {
+        display: flex;
+        gap: 22px;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-phone button {
+        background: unset;
+        border: unset;
+        border-bottom: 1px dashed #1F1F1F;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        height: 18px;
+        color: #1F1F1F;
+        display: flex;
+        margin: 0 18px 0 auto;
+    }
+    .select-phone select {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1F;
+        width: 155px;
+        appearance: none;
+        border: unset;
+        background: unset;
+        background-image: url(../img/phone-arrow.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 8px;
+    }
+    .header-nav, .header-phone {
+        display: none;
+    }
+    #toggle:checked ~ header .container .header-nav, #toggle:checked ~ header .container .header-phone {
+        display: block;
+    }
+    #toggle:checked ~ header {
+        height: 100%;
+        display: flex;
+    }
+    #toggle:checked ~ header .wrapper {
+        margin: 23px 0;
+    }
+    #toggle:checked ~ header .container {
+        height: calc(100%);
+        
+    }
+    #toggle:checked ~ header .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+#toggle {
+    display: none;
 }

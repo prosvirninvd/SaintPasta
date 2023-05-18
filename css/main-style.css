@@ -5,7 +5,7 @@
     text-decoration: none;
     
 }
-a, button, path, input {
+a, button, path {
     transition: color 0.3s, fill 0.3s, stroke 0.3s, border-color 0.3s;
 }
 h2 {
@@ -20,15 +20,30 @@ body {
     min-height: 100%;
     background-color: #fbf8f8;
 }
-main {
-    margin-top: -98px;
-    margin-bottom: -271px;
-    font-weight: 400;
-}
+
+@media (min-width: 768px) {
+
 .wrapper {
     width: 100%;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+main {
+    margin-bottom: -271px;
+    font-weight: 400;
+}
+}
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    main {
+        font-weight: 400;
+    }
 }

@@ -1,3 +1,4 @@
+@media (min-width: 768px) {
 .about-us {
     width: 100%;
     max-height: 616px;
@@ -50,4 +51,57 @@
 }
 .about-us a:focus {
     color: #777E89;
+}
+.about-background {
+    display: none;
+}}
+@media (max-width: 768px) {
+    .about-us .container {
+        padding-top: 47px;
+        padding-bottom: 37px;
+    }
+    .about-us h2 {
+        font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    color: #2f2f2f;
+    }
+    .about-text {
+        padding-top: 29px;
+        padding-bottom: 22px;
+    }
+    .about-us p:first-child {
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
+        color: #2F2F2F;
+    }
+    .about-us p:last-child {
+        margin-top: 29px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #2F2F2F;
+    }
+    .about-us a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27px;
+        color: #AD8442;
+    }
+    .about-background {
+        width: 100%;
+        min-height: 447px;
+        display: block;
+        background-image: url("../img/7e278e90e64f847a878f7e359fdfe68f.png");
+        background-repeat: no-repeat;
+        background-size: 901px 674px;
+        background-position-x: 65%;
+        background-position-y: calc(100% + 13px);
+    }
 }

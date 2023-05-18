@@ -22,18 +22,28 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
+    <input type="checkbox" id="toggle">
     <header>
-        <section>
+
+        <section class="wrapper">
+                
             <div class="container">
-                <a class="header-logo" href="/"><img src="img/f5235f536c0e23da240e7d0e64ad2b92.png" alt="Логотип"></a>
-                <ul class="nav">
+                <div class="header-logo-menu">
+                    <a class="header-logo" href="/"><img src="img/f5235f536c0e23da240e7d0e64ad2b92.png" alt="Логотип"></a>
+                
+                    <label for="toggle" class="menu-button">
+                    <span></span>
+                </label>
+                </div>
+                
+                <ul class="header-nav">
                     <li><a href="#">О компании</a></li>
                     <li><a href="#">Паста короткая</a></li>
                     <li><a href="#">Паста длинная</a></li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-                <div class="phone">
+                <div class="header-phone">
                     <div class="select-phone">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_47_38)">
@@ -45,8 +55,7 @@
                             </clipPath>
                             </defs>
                             </svg>
-                        <select>
-                            <option value="1">+7 905 222 42 32</option>
+                        <select id="header-phone-select">
                             <option value="1">+7 905 222 42 32</option>
                         </select>
                     </div>
@@ -98,7 +107,7 @@
                         
                     </div>
                     <div class="team-member-info">
-                        <h3>Евгений Мальцев</h3>
+                        <p class="team-member-name">Евгений Мальцев</p>
                         <p class="team-member-position">Бренд-шеф</p>
                         <p class="team-member-text">Безумно любит своё дело. Каждый день он замешивает свежее тесто и заготавливает лучшие начинки для создания той самой итальянской классики.                        </p>
                         <p class="team-member-text">Каждый понедельник Евгений представляет экспериментальную пасту недели, вкус которой не станет серийным. Следите за новостями, успейте попробовать.</p>
@@ -107,11 +116,16 @@
                                 <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.07146 0.785645L1.85718 3.99993L5.07146 7.21422" stroke="black" stroke-width="1.60714"/>
                                 </svg>
-                                
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.69564 1L2 6.69564L7.69564 12.3913" stroke="black" stroke-width="2"/>
+                                </svg>
                             </button>
                             <button class="next-member" aria-label="Вперед">
                                 <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.785714 7.21436L4 4.00007L0.785714 0.785784" stroke="black" stroke-width="1.60714"/>
+                                </svg>
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.61228 12.3915L7.30792 6.69584L1.61228 1.0002" stroke="black" stroke-width="2"/>
                                 </svg>
                             </button>
                         </div>
@@ -121,18 +135,32 @@
             </div>
         </section>
         <section class="gallery">
-            <div><img src="img/8785e1851af8beefc18c853adb024a76.png" alt="Фото 1"></div>
-            <div><img src="img/7aaf95bc65c7ab54d6cbd0d2dfb87a92.png" alt="Фото 2"></div>
-            <div><img src="img/ee1d26d9146d032916def735ed309369.png" alt="Фото 3"></div>
-            <div><img src="img/10d124ffd39091bf55510b627b64a631.png" alt="Фото 4"></div>
-            <div><img src="img/caddc35c91d6df54cbabb0f9f494c7ec.png" alt="Фото 5"></div>
-            <div><img src="img/71de3a0cef2557cb203cbbb514e3ff01.png" alt="Фото 6"></div>
+            <div class="grid">
+                <div class="photo-block"><img src="img/8785e1851af8beefc18c853adb024a76.png" alt="Фото 1"></div>
+                <div class="photo-block"><img src="img/7aaf95bc65c7ab54d6cbd0d2dfb87a92.png" alt="Фото 2"></div>
+                <div class="photo-block"><img src="img/ee1d26d9146d032916def735ed309369.png" alt="Фото 3"></div>
+                <div class="photo-block"><img src="img/10d124ffd39091bf55510b627b64a631.png" alt="Фото 4"></div>
+                <div class="photo-block"><img src="img/caddc35c91d6df54cbabb0f9f494c7ec.png" alt="Фото 5"></div>
+                <div class="photo-block"><img src="img/71de3a0cef2557cb203cbbb514e3ff01.png" alt="Фото 6"></div>
+            </div>
+            <div class="gallery-buttons">
+                <button class="previous-photo" aria-label="Назад">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69564 1L2 6.69564L7.69564 12.3913" stroke="black" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button class="next-photo" aria-label="Вперед">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.61228 12.3915L7.30792 6.69584L1.61228 1.0002" stroke="black" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
         </section>
         <section class="wrapper our-products">
             <div class="container">
                 <h2>Наша продукция</h2>
                 <div class="product-switches">
-                    <button class="product-switch product-switch-active">Паста короткая</button><button class="product-switch">Паста длинная</button><a href="#" class="all-products"><div>Вся продукция &rarr;</div></a>
+                    <button class="product-switch product-switch-active">Паста короткая</button><button class="product-switch">Паста длинная</button><a href="#" class="all-products">Вся продукция &rarr;</a>
                 </div>
                 <div class="product-selects">
                     <select name="pastaShape">
@@ -196,6 +224,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="product-grid-buttons">
+                    <button class="previous-product" aria-label="Назад">
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.69564 1L2 6.69564L7.69564 12.3913" stroke="black" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <button class="next-product" aria-label="Вперед">
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.61228 12.3915L7.30792 6.69584L1.61228 1.0002" stroke="black" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                <a href="#" class="all-products">Вся продукция &rarr;</a>
             </div>
         </section>
         <section class="wrapper about-us">
@@ -207,6 +248,8 @@
                         <p>Мы производим настоящую домашнюю пасту (pasta fresca) из лучшего итальянского сырья на лучшем итальянском оборудовании, внимательно соблюдая оригинальные рецептуры и строго контролируя качество выпускаемой продукции.</p>
                     </div>
                     <a href="#">Подробнее &rarr;</a>
+                </div>
+                <div class="about-background">
                 </div>
             </div> 
         </section>
@@ -257,10 +300,10 @@
                     <h1>Остались вопросы?</h1>
                     <p>Заполните небольшую форму и наш менеджер свяжется с вами в ближайшее время</p>
                     <form action="#" method="post">
-                        <input class="field name" type="text" placeholder="Имя" name="name" required>
+                        <input class="field name" type="text" placeholder="Имя" name="name" required autocomplete="name">
                         <label for="phone">Телефон</label>
-                        <input class="field phone" type="tel" placeholder="8 909 |" name="phone" required>
-                        <input class="field email" type="email" placeholder="E-mail" name="email" required>
+                        <input id="phone" class="field phone" type="tel" placeholder="8 909 |" name="phone" required autocomplete="tel">
+                        <input class="field email" type="email" placeholder="E-mail" name="email" required autocomplete="email">
                         <input class="submit" type="submit">
                     </form>
                 </div>
@@ -272,6 +315,17 @@
         <section class="nav">
             <div class="container">
                 <img class="footer-logo" src="img/f5235f536c0e23da240e7d0e64ad2b92.png" alt="Логотип">
+                <div class="call">
+                    <div class="phone-number">
+                        <a href="tel:+73512330601">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.1167 8.77452C14.5028 11.9463 11.9026 14.5353 8.7308 16.1604L6.2651 13.6947C5.96249 13.3921 5.51418 13.2912 5.12191 13.4257C3.86664 13.8404 2.51051 14.0646 1.12075 14.0646C0.504326 14.0646 -2.28882e-05 14.5689 -2.28882e-05 15.1853V19.0968C-2.28882e-05 19.7133 0.504326 20.2176 1.12075 20.2176C11.6448 20.2176 20.1739 11.6885 20.1739 1.16447C20.1739 0.548049 19.6695 0.0437012 19.0531 0.0437012H15.1304C14.514 0.0437012 14.0096 0.548049 14.0096 1.16447C14.0096 2.56544 13.7855 3.91037 13.3708 5.16563C13.2475 5.5579 13.3372 5.99501 13.651 6.30882L16.1167 8.77452Z" fill="white"/>
+                            </svg>
+                            +7 351 233-06-01
+                        </a>
+                    </div>
+                    <button>Обратный звонок</button>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#">О компании</a></li>
                     <li><a href="#">Паста короткая</a></li>
@@ -285,46 +339,54 @@
             <div class="container">
                 <div class="search">
                 <input type="text" class="search-input" name="search" formaction="#" formmethod="post" placeholder="Поиск">
+                </div>
                 <div class="online">
                     <a href="#" class="vk">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22.0473 16.4813C21.3625 15.661 20.5566 14.9609 19.7941 14.2174C19.1062 13.5473 19.0628 13.1586 19.6158 12.3851C20.2193 11.541 20.8683 10.7292 21.4773 9.88886C22.0458 9.10351 22.6269 8.32031 22.9261 7.37998C23.1158 6.78175 22.948 6.51751 22.3338 6.41276C22.2279 6.39443 22.1185 6.39348 22.0108 6.39348L18.3665 6.3892C17.9177 6.38253 17.6696 6.57797 17.5108 6.97529C17.2966 7.51234 17.0756 8.04892 16.8203 8.56717C16.2411 9.74222 15.5942 10.878 14.6873 11.8397C14.4873 12.0518 14.2661 12.3199 13.9319 12.2094C13.5138 12.0571 13.3906 11.3691 13.3975 11.1365L13.394 6.93553C13.3129 6.33539 13.1797 6.06782 12.5831 5.95117L8.79748 5.95189C8.29217 5.95189 8.03879 6.14685 7.76897 6.46252C7.61333 6.64487 7.56637 6.76318 7.88624 6.82365C8.51455 6.94268 8.86851 7.3488 8.96242 7.97798C9.11307 8.98329 9.10258 9.99265 9.01582 11.002C8.99031 11.2967 8.93954 11.5907 8.82251 11.8659C8.63945 12.2985 8.34389 12.3865 7.95561 12.1204C7.60403 11.8795 7.35709 11.5395 7.1154 11.1982C6.2075 9.91695 5.48313 8.53527 4.89249 7.08337C4.72182 6.66391 4.42745 6.40967 3.98244 6.40276C2.8891 6.38539 1.79552 6.38253 0.702176 6.40372C0.0443113 6.4161 -0.151856 6.73509 0.116057 7.33071C1.30689 9.97623 2.63239 12.5482 4.36262 14.8911C5.25097 16.0936 6.2709 17.155 7.58854 17.9073C9.08184 18.76 10.6893 19.0166 12.3824 18.9376C13.1751 18.9005 13.4133 18.6946 13.45 17.9054C13.4748 17.3655 13.536 16.8287 13.8027 16.3435C14.0644 15.8674 14.4608 15.7767 14.9178 16.0728C15.1463 16.2212 15.3389 16.4099 15.5208 16.6089C15.967 17.0965 16.3972 17.5988 16.8604 18.0699C17.4412 18.6603 18.1294 19.009 18.9946 18.9379L22.344 18.9386C22.8836 18.9033 23.1635 18.2425 22.8536 17.6409C22.636 17.2196 22.3504 16.8444 22.0473 16.4813Z" fill="white"/>
+                        </svg>
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.4673 24.9828C34.3657 23.6631 33.0693 22.5369 31.8426 21.3409C30.736 20.2628 30.6662 19.6375 31.5558 18.3932C32.5267 17.0353 33.5708 15.7294 34.5505 14.3775C35.465 13.1141 36.3998 11.8542 36.8811 10.3415C37.1863 9.37912 36.9163 8.95403 35.9282 8.78553C35.758 8.75604 35.582 8.75451 35.4086 8.75451L29.5462 8.74762C28.8242 8.73689 28.425 9.0513 28.1696 9.69046C27.8249 10.5544 27.4695 11.4176 27.0588 12.2513C26.127 14.1416 25.0864 15.9687 23.6274 17.5159C23.3056 17.8571 22.9498 18.2883 22.4122 18.1106C21.7397 17.8655 21.5414 16.7588 21.5525 16.3846L21.5468 9.62651C21.4164 8.66107 21.2021 8.23062 20.2423 8.04297L14.1525 8.04412C13.3396 8.04412 12.932 8.35776 12.4979 8.86557C12.2475 9.15891 12.172 9.34924 12.6866 9.44652C13.6973 9.638 14.2667 10.2913 14.4178 11.3035C14.6601 12.9207 14.6433 14.5445 14.5037 16.1682C14.4627 16.6423 14.381 17.1153 14.1927 17.558C13.8982 18.2538 13.4228 18.3955 12.7981 17.9674C12.2326 17.5798 11.8353 17.033 11.4465 16.4838C9.98598 14.4227 8.82069 12.2 7.87052 9.86433C7.59597 9.18955 7.12242 8.78055 6.40653 8.76944C4.64768 8.74149 2.88844 8.73689 1.12959 8.77098C0.0712834 8.79089 -0.24429 9.30406 0.1867 10.2622C2.10238 14.5181 4.23471 18.6556 7.01813 22.4246C8.44722 24.359 10.088 26.0666 12.2076 27.2767C14.6099 28.6485 17.1959 29.0613 19.9195 28.9342C21.1948 28.8745 21.5778 28.5432 21.6369 27.2737C21.6768 26.4051 21.7753 25.5416 22.2044 24.7611C22.6254 23.9952 23.2631 23.8493 23.9981 24.3257C24.3659 24.5642 24.6757 24.8679 24.9683 25.1881C25.6861 25.9724 26.3782 26.7804 27.1232 27.5383C28.0577 28.488 29.1647 29.0491 30.5566 28.9346L35.9447 28.9357C36.8128 28.8791 37.263 27.816 36.7645 26.8482C36.4144 26.1704 35.9551 25.5668 35.4673 24.9828Z" fill="white"/>
                         </svg>                            
                     </a>
                     <a href="#" class="fb">
                         <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.9998 5.93904L13.3685 5.93979C12.0894 5.93979 11.8418 6.57111 11.8418 7.49761V9.54047H14.8923L14.8912 12.7403H11.8418V20.9512H8.66004V12.7403H6V9.54047H8.66004V7.18092C8.66004 4.4424 10.2706 2.95117 12.6227 2.95117L15 2.9551L14.9998 5.93904Z" fill="white"/>
-                        </svg>                            
+                        </svg>
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.1301 8.02386L21.5058 8.02507C19.4482 8.02507 19.0499 9.04067 19.0499 10.5311V13.8175H23.9572L23.9554 18.965H19.0499V32.1738H13.9313V18.965H9.65216V13.8175H13.9313V10.0217C13.9313 5.61621 16.5223 3.21729 20.3061 3.21729L24.1304 3.2236L24.1301 8.02386Z" fill="white"/>
+                        </svg>                       
                     </a>
                     <a href="#" class="ig">
                         <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.1275 2.95117H6.87243C4.18573 2.95117 2 5.1369 2 7.8236V16.0788C2 18.7654 4.18573 20.9511 6.87243 20.9511H15.1277C17.8142 20.9511 20 18.7654 20 16.0788V7.8236C20 5.1369 17.8142 2.95117 15.1275 2.95117V2.95117ZM11 16.8729C8.28609 16.8729 6.07825 14.665 6.07825 11.9512C6.07825 9.23726 8.28609 7.02943 11 7.02943C13.7139 7.02943 15.9217 9.23726 15.9217 11.9512C15.9217 14.665 13.7139 16.8729 11 16.8729ZM16.0394 8.19013C15.2374 8.19013 14.5851 7.53782 14.5851 6.73582C14.5851 5.93382 15.2374 5.28137 16.0394 5.28137C16.8414 5.28137 17.4938 5.93382 17.4938 6.73582C17.4938 7.53782 16.8414 8.19013 16.0394 8.19013Z" fill="white"/>
                             <path d="M11 7.95117C8.79449 7.95117 7 9.74552 7 11.9512C7 14.1567 8.79449 15.9512 11 15.9512C13.2056 15.9512 15 14.1567 15 11.9512C15 9.74552 13.2056 7.95117 11 7.95117Z" fill="white"/>
                             <path d="M16.4999 5.95117C16.2243 5.95117 16 6.17554 16 6.45117C16 6.72681 16.2243 6.95117 16.4999 6.95117C16.7757 6.95117 17 6.72698 17 6.45117C17 6.17536 16.7757 5.95117 16.4999 5.95117Z" fill="white"/>
-                        </svg>                            
+                        </svg>
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.7269 3.21729H11.4469C7.12481 3.21729 3.60864 6.73345 3.60864 11.0555V24.3357C3.60864 28.6576 7.12481 32.1737 11.4469 32.1737H24.7271C29.0489 32.1737 32.5651 28.6576 32.5651 24.3357V11.0555C32.5651 6.73345 29.0489 3.21729 24.7269 3.21729V3.21729ZM18.0869 25.6131C13.721 25.6131 10.1693 22.0613 10.1693 17.6955C10.1693 13.3297 13.721 9.77796 18.0869 9.77796C22.4527 9.77796 26.0044 13.3297 26.0044 17.6955C26.0044 22.0613 22.4527 25.6131 18.0869 25.6131V25.6131ZM26.1938 11.6452C24.9036 11.6452 23.8542 10.5958 23.8542 9.30563C23.8542 8.01545 24.9036 6.96586 26.1938 6.96586C27.4839 6.96586 28.5335 8.01545 28.5335 9.30563C28.5335 10.5958 27.4839 11.6452 26.1938 11.6452Z" fill="white"/>
+                            <path d="M18.0869 11.261C14.539 11.261 11.6522 14.1476 11.6522 17.6958C11.6522 21.2438 14.539 24.1306 18.0869 24.1306C21.6352 24.1306 24.5217 21.2438 24.5217 17.6958C24.5217 14.1476 21.6352 11.261 18.0869 11.261V11.261Z" fill="white"/>
+                            <path d="M26.9345 8.0437C26.4912 8.0437 26.1303 8.40463 26.1303 8.84805C26.1303 9.29146 26.4912 9.6524 26.9345 9.6524C27.3781 9.6524 27.739 9.29174 27.739 8.84805C27.739 8.40436 27.3781 8.0437 26.9345 8.0437Z" fill="white"/>
+                        </svg>                          
                     </a>
                     <a href="#" class="tg">
                         <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.84985 13.063L8.83984 18.0155L11.4305 15.4363L15.8724 18.9512L19 4.95117L3 11.5861L6.84985 13.063ZM14.428 8.96791L9.53064 13.415L8.92065 15.7037L7.79382 12.8986L14.428 8.96791Z" fill="white"/>
                         </svg>
+                        <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.802 19.4841L15.0033 27.4511L19.1709 23.302L26.3166 28.9563L31.3479 6.43457L5.60876 17.1082L11.802 19.4841ZM23.9929 12.8963L16.1146 20.0503L15.1333 23.7321L13.3206 19.2196L23.9929 12.8963Z" fill="white"/>
+                        </svg>                            
                     </a>
                 </div>
-            </div>
                 <div class="call">
                     <div class="phone-number">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_47_148)">
+                        
+                        <a href="tel:+73512330601">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.7822 6.92469C11.5022 9.44024 9.44 11.4936 6.92444 12.7825L4.96889 10.8269C4.72889 10.5869 4.37333 10.5069 4.06222 10.6136C3.06667 10.9425 1.99111 11.1202 0.888888 11.1202C0.4 11.1202 0 11.5202 0 12.0091V15.1114C0 15.6002 0.4 16.0002 0.888888 16.0002C9.23556 16.0002 16 9.2358 16 0.889133C16 0.400244 15.6 0.000244141 15.1111 0.000244141H12C11.5111 0.000244141 11.1111 0.400244 11.1111 0.889133C11.1111 2.00024 10.9333 3.06691 10.6044 4.06247C10.5067 4.37358 10.5778 4.72024 10.8267 4.96913L12.7822 6.92469Z" fill="white"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_47_148">
-                                <rect width="16" height="16" fill="white" transform="matrix(-1 0 0 1 16 0.000244141)"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <p>
-                            <a href="tel:+73512330601">+7 351 233-06-01</a>
-                        </p>
+                            </svg>
+                            +7 351 233-06-01
+                        </a>
                     </div>
                     <button>Обратный звонок</button>
                 </div>

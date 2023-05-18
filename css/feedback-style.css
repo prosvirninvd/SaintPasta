@@ -1,3 +1,6 @@
+@media (min-width: 768px) {
+    
+
 .feedback {
     background: url(../img/d1f39792d44416ed88ca0eecee629ffd.png); /* */
     background-size:1506px 966px;
@@ -104,11 +107,100 @@ max-width: 465px;
     line-height: 24px;
     color: white;
     border: none;
-    transition: color 0.3s;
 }
 .feedback .submit:hover {
     color: black;
 }
 .feedback .submit:focus {
     color: #777E89;
+}}
+@media (max-width: 768px) {
+    .feedback {
+        background: url(../img/d1f39792d44416ed88ca0eecee629ffd.png);
+        background-size:1515px 1011px;
+        background-position: center;
+        width: 100%;
+        max-height: 647px;
+    }
+    .feedback h1 {
+        font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 34px;
+color: white;
+    }
+    .feedback p {
+        padding-top: 25px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: white;
+    }
+    .feedback .gradient {
+        background: linear-gradient(89.57deg, rgba(0, 0, 0, 0.85) 2.28%, rgba(0, 0, 0, 0) 76.28%);
+        background-size: calc(100% + 256px) 100%;
+        background-position: left;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .feedback .gradient .gradient {
+        background: none;
+    }
+    .feedback .container {
+        padding-top: 54px;
+        padding-bottom: 70px;
+    }
+    .feedback form {
+        width: 100%;
+        padding-top: 39px;
+    }
+    .feedback .field {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid white;
+        background:none;
+        color: white;
+        line-height: 22px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .feedback .field::placeholder {
+        color: white;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .feedback label {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+        height: 19px;
+        line-height: 19px;
+        
+    }
+    .feedback .name {
+        height: 37px;
+        margin-bottom: 35px;
+    }
+    .feedback .phone {
+        margin-top: 6px;
+        height: 27px;
+        
+    }
+    .feedback .email {
+        height: 37px;
+        margin-top: 50px;
+        margin-bottom: 49px;
+    }
+    .feedback .submit {
+        width: 135px;
+        height: 46px;
+        background: #D38B13;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: white;
+        border: none;
+    }
 }
