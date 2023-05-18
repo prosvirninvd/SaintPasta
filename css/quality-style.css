@@ -43,7 +43,12 @@
     color: #2f2f2f;
 }}
 @media (max-width: 768px) {
-
+    .quality {
+        background: url("../img/3db3b0166ef4c2e289abfe7abf2aab33.png") no-repeat;
+        background-size: 450px 362px;
+        background-position-x: calc(100% + 225px);
+        background-position-y: 94px;
+    }
     .quality .container {
         min-height: 859px;
         display: flex;

@@ -119,15 +119,14 @@ max-width: 465px;
         background: url(../img/d1f39792d44416ed88ca0eecee629ffd.png);
         background-size:1515px 1011px;
         background-position: center;
-        width: 100%;
         max-height: 647px;
     }
     .feedback h1 {
         font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 34px;
-color: white;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 34px;
+        color: white;
     }
     .feedback p {
         padding-top: 25px;

@@ -102,7 +102,6 @@ header .select-phone {
         width: 100%;
         min-height: 66px;
         background: rgba(238, 222, 191, 0.95);
-        box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.17);
         position: fixed;
         top: 0;
         z-index: 1;
