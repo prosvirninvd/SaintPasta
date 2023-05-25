@@ -177,8 +177,16 @@ color: #000000;
     .delivery {
         overflow: hidden;
     }
-    .delivery-about {
+    .delivery .gradient {
+        width: 100%;
+        height: 100%;
         background-color: rgba(236, 220, 189, 0.72);
+    }
+    .delivery-about {
+        background-image: url(../img/delivery-bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: calc(100% - 189px);
     }
     .delivery-about .container {
         padding-top: 55px;

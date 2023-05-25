@@ -46,12 +46,7 @@
     margin-top: 36px;
     line-height: 27px;
 }
-.about-us a:hover {
-    color: #2f2f2f;
-}
-.about-us a:focus {
-    color: #777E89;
-}
+
 .about-background {
     display: none;
 }}
@@ -104,4 +99,10 @@
         background-position-x: 65%;
         background-position-y: calc(100% + 13px);
     }
+}
+.about-us a:hover {
+    color: #2f2f2f;
+}
+.about-us a:focus {
+    color: #777E89;
 }

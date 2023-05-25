@@ -35,7 +35,7 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        overflow-x: scroll;
+        overflow-x: hidden;
     }
     .gallery .photo-block {
         flex-grow: 0;
@@ -74,5 +74,19 @@
     .gallery-buttons .next-photo svg {
         top: 1px;
         left: 1px;
+    }
+    .gallery-buttons button:hover {
+        border-color: #D38B13;
+    }
+    .gallery-buttons button:hover svg path {
+        stroke: #D38B13;
+    }
+    
+    .gallery-buttons button:focus {
+        border-color: #D38B13;
+    }
+    
+    .gallery-buttons button:focus svg path {
+        stroke: #D38B13;
     }
 }

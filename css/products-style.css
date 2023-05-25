@@ -1,3 +1,5 @@
+
+
 @media (min-width: 768px) {
 .our-products .container {
     width: 100%;
@@ -71,7 +73,6 @@
     border: 1px solid black;
 }
 .product-item {
-    /* height: 493px; */
     position: relative;
 }
 .product-item img {
@@ -121,9 +122,7 @@
     gap: 25px;
     align-items: center;
 }
-.product-buy:hover {
-    color: #2F2F2F;
-}
+
 .product-more {
     font-weight: 400;
     font-size: 14px;
@@ -131,12 +130,7 @@
     color: #2F2F2F;
     text-decoration: none;
 }
-.product-more:hover{
-    color: #D38B13;
-}
-.all-products:hover {
-    color: #2F2F2F;
-}
+
 .all-products:focus, .product-buy:focus, .product-more:focus {
     color: #777E89;
 }
@@ -175,7 +169,7 @@
         display: flex;
         padding-top: 36px;
         flex-direction: row;
-        overflow-x: scroll;
+        overflow-x: hidden;
     }
     .product-switch {
         flex-grow: 0;
@@ -219,7 +213,7 @@
         display: flex;
         flex-direction: row;
         gap: 20px;
-        overflow-x: scroll;
+        overflow-x: hidden;
     }
 
     .product-item {
@@ -296,16 +290,17 @@
         background: unset;
         border-radius: 50%;
         border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .gproduct-grid-buttons button svg {
+    .product-grid-buttons button svg {
         position: relative;
     }
     .product-grid-buttons .previous-product svg {
-        top: 1px;
         right: 1px;
     }
     .product-grid-buttons .next-product svg {
-        top: 1px;
         left: 1px;
     }
     .product-switches .all-products {
@@ -318,4 +313,30 @@
         line-height: 30px;
         color: #AD8442;
     }
+}
+
+.product-buy:hover {
+    color: #2F2F2F;
+}
+
+.all-products:hover {
+    color: #2F2F2F;
+}
+.product-more:hover{
+    color: #D38B13;
+}
+
+.product-grid-buttons button:hover {
+    border-color: #D38B13;
+}
+.product-grid-buttons button:hover svg path {
+    stroke: #D38B13;
+}
+
+.product-grid-buttons button:focus {
+    border-color: #D38B13;
+}
+
+.product-grid-buttons button:focus svg path {
+    stroke: #D38B13;
 }

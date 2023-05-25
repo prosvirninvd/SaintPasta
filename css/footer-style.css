@@ -65,12 +65,7 @@ footer .online {
 footer .online a svg:last-child {
     display: none;
 }
-footer .online a:hover svg path {
-    fill: #D38B13;
-}
-footer .online a:focus svg path {
-    fill: #777E89;
-}
+
 footer .call {
     display: flex;
     align-items: center;
@@ -87,12 +82,7 @@ footer .call button {
     background-color: white;
     border: unset;
 }
-footer .call button:hover {
-    color: #D38B13;
-}
-footer .call button:focus {
-    color: #777E89;
-}
+
 .call .phone-number {
     display: flex;
     align-items: center;
@@ -113,19 +103,6 @@ footer .call button:focus {
 .nav .call {
     display: none;
 }
-.call .phone-number a:hover {
-    color: #D38B13;
-}
-.call .phone-number a:hover svg path {
-    fill: #D38B13;
-}
-.call .phone-number a:focus {
-    color: #777E89;
-}
-.call .phone-number a:focus svg path {
-    fill: #777E89;
-}
-.call .phone-number
 footer .copyright {
     width: 100%;
     margin-top: 27px;
@@ -153,12 +130,7 @@ footer .nav-links a {
     line-height: 21px;
     display: block;
 }
-footer .nav-links a:hover {
-    color: #D38B13;
-}
-footer .nav-links a:focus {
-    color: #777E89;
-}
+
 }
 @media (max-width: 768px) {
     footer {
@@ -289,4 +261,34 @@ footer .nav-links a:focus {
         display: none;
     }
 
+}
+.call .phone-number a:hover {
+    color: #D38B13;
+}
+.call .phone-number a:hover svg path {
+    fill: #D38B13;
+}
+.call .phone-number a:focus {
+    color: #777E89;
+}
+.call .phone-number a:focus svg path {
+    fill: #777E89;
+}
+footer .nav-links a:hover {
+    color: #D38B13;
+}
+footer .nav-links a:focus {
+    color: #777E89;
+}
+footer .call button:hover {
+    color: #D38B13;
+}
+footer .call button:focus {
+    color: #777E89;
+}
+footer .online a:hover svg path {
+    fill: #D38B13;
+}
+footer .online a:focus svg path {
+    fill: #777E89;
 }

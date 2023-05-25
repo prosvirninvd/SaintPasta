@@ -26,9 +26,7 @@ header .header-logo img {
     object-fit: fill;
     filter: brightness(0);
 }
-header a.header-logo:hover img {
-    filter: brightness(2);
-}
+
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -91,12 +89,7 @@ header .select-phone {
     width: 155px;
     height: 24px;
 }
-.header-nav a:hover {
-    color: white;
 }
-.header-nav a:focus {
-    color: #777E89;
-}}
 @media (max-width: 768px) {
     header {
         width: 100%;
@@ -142,6 +135,10 @@ header .select-phone {
         border-radius: 1px;
         display: block;
         position: absolute;
+        transition: background-color 0.3s;
+    }
+    .menu-button:hover > span, .menu-button:hover > span::before, .menu-button:hover > span::after {
+        background-color: white;
     }
     .menu-button > span::before {
         content: '';
@@ -231,4 +228,15 @@ header .select-phone {
 }
 #toggle {
     display: none;
+}
+
+header a.header-logo:hover img {
+    filter: brightness(2);
+}
+
+header .header-nav a:hover {
+    color: white;
+}
+header .header-nav a:focus {
+    color: #777E89;
 }
