@@ -6,7 +6,7 @@
     background-color: beige;
     
 }
-.gallery .grid {
+.gallery .gallery-grid {
     width: 100%;
     height: 100%;
     grid-template-columns: repeat(3, 1fr);
@@ -31,12 +31,13 @@
     .gallery {
         width: 100%;
     }
-    .gallery .grid {
+    .gallery .gallery-grid {
         width: 100%;
         display: flex;
         flex-direction: row;
-        overflow-x: scroll;
+        overflow-x: hidden;
         scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
     }
     .gallery .photo-block {
         flex-grow: 0;

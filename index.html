@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/feedback-style.css">
     <link rel="stylesheet" href="css/footer-style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <input type="checkbox" id="toggle">
@@ -135,7 +136,7 @@
             </div>
         </section>
         <section class="gallery">
-            <div class="grid">
+            <div class="gallery-grid">
                 <div class="photo-block"><img src="img/8785e1851af8beefc18c853adb024a76.png" alt="Фото 1"></div>
                 <div class="photo-block"><img src="img/7aaf95bc65c7ab54d6cbd0d2dfb87a92.png" alt="Фото 2"></div>
                 <div class="photo-block"><img src="img/ee1d26d9146d032916def735ed309369.png" alt="Фото 3"></div>
@@ -144,12 +145,12 @@
                 <div class="photo-block"><img src="img/71de3a0cef2557cb203cbbb514e3ff01.png" alt="Фото 6"></div>
             </div>
             <div class="gallery-buttons">
-                <button class="previous-photo" aria-label="Назад">
+                <button class="previous-photo" aria-label="Назад" onclick="previousPhoto();">
                     <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.69564 1L2 6.69564L7.69564 12.3913" stroke="black" stroke-width="2"/>
                     </svg>
                 </button>
-                <button class="next-photo" aria-label="Вперед">
+                <button class="next-photo" aria-label="Вперед" onclick="nextPhoto();">
                     <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.61228 12.3915L7.30792 6.69584L1.61228 1.0002" stroke="black" stroke-width="2"/>
                     </svg>
@@ -225,12 +226,12 @@
                     </div>
                 </div>
                 <div class="product-grid-buttons">
-                    <button class="previous-product" aria-label="Назад">
+                    <button class="previous-product" aria-label="Назад" onclick="previousProduct();">
                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.69564 1L2 6.69564L7.69564 12.3913" stroke="black" stroke-width="2"/>
                         </svg>
                     </button>
-                    <button class="next-product" aria-label="Вперед">
+                    <button class="next-product" aria-label="Вперед" onclick="nextProduct();">
                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.61228 12.3915L7.30792 6.69584L1.61228 1.0002" stroke="black" stroke-width="2"/>
                         </svg>
