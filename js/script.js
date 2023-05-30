@@ -16,3 +16,9 @@ function previousProduct(event) {
     const childWidth = productGrid.children[0].clientWidth;
     productGrid.scrollLeft -= childWidth;
 }
+let activeSwitch = document.getElementsByClassName('product-switch-active')[0];
+function switchPasta(target) {
+    activeSwitch.classList.remove('product-switch-active');
+    target.classList.add('product-switch-active');
+    activeSwitch = target;
+}

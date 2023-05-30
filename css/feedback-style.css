@@ -108,12 +108,7 @@ max-width: 465px;
     color: white;
     border: none;
 }
-.feedback .submit:hover {
-    color: black;
 }
-.feedback .submit:focus {
-    color: #777E89;
-}}
 @media (max-width: 768px) {
     .feedback {
         background: url(../img/d1f39792d44416ed88ca0eecee629ffd.png);
@@ -202,4 +197,11 @@ max-width: 465px;
         color: white;
         border: none;
     }
+}
+
+.feedback .submit:hover {
+    color: black;
+}
+.feedback .submit:focus {
+    color: #777E89;
 }
